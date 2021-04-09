@@ -9,9 +9,10 @@ namespace ViperHold
         {
             while (true)
             {
+                Console.SetCursorPosition(0, Console.CursorTop);
+
                 var current = DateTime.Now;
                 Console.Write(current.ToLongTimeString());
-                Console.SetCursorPosition(0, Console.CursorTop);
 
                 Thread.Sleep(1000);
             }
